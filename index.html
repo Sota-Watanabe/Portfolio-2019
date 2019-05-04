@@ -1,34 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <link rel="icon" type="image/jpg" href="img/favicon.jpg">
-    <link href='//fonts.googleapis.com/css?family=Raleway:500,400,300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="font/LigatureSymbols/style.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.4.min.js"></script>
-    <script src="js/product.js"></script>
-    <script>
-    $(function(){
-        $('a[href^=#]').click(function(){
-            var speed = 500;
-            var href= $(this).attr("href");
-            var target = $(href == "#" || href == "" ? 'html' : href);
-            var position = target.offset().top;
-            $("html, body").animate({scrollTop:position}, speed, "swing");
-            return false;
-        });
-    });
-    </script>
+
     <title>そーたのポートフォリオ</title>
 </head>
 <body>
     <div class="l-wrapper">
-        <a id="home"></a>
-        <div class="contents-frame">
-            <h1>そーたのポートフォリオ</h1>
-            <p>-エンジニアを目指す-</p>
-        </div>
+        <header>
+            <h1 class="header-text">そーたのポートフォリオ</h1>
+            <p class="header-text">-エンジニアを目指す-</p>
+        </header>
         <div class="l-main">
             <a id="profile"></a>
             <div class="section l-constrained">

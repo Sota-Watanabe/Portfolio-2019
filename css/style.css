@@ -1,13 +1,54 @@
-@font-face {
-    font-family: mplus-1p-regular;
-    src:url(../font/mplus-1p-regular.ttf)  format("truetype");
-}
-
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Raleway', 'mplus-1p-regular', sans-serif;
-    font-weight: 300;
+}
+
+
+
+
+header{
+    background: url(../img/header.png) no-repeat center;
+    width: auto;
+    height: 500px;
+    /* background-size: auto 600px; */
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;/*ブラー効果でボヤけた部分を非表示*/
+}
+
+header:before{
+    content: '';
+    background: inherit;/*.bgImageで設定した背景画像を継承する*/
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    position: absolute;
+    /*ブラー効果で画像の端がボヤけた分だけ位置を調整*/
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;/*重なり順序を一番下にしておく*/
+}
+
+.header-text{
+    top: 30%;
+    text-align: center;
+    line-height: 100px;
+    margin: 0;
+    /* font-family: 'Cinzel', serif; */
+    font-size: 34px;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0,0,0,.4);
+}
+
+header h1{
+    padding-top: 100px;
+    font-family: 'Cinzel', serif;
+    font-size: 100px
 }
 
 html, body {
@@ -48,30 +89,6 @@ body {
     margin: 0 auto;
 }
 
-.contents-frame {
-    background-attachment: fixed;
-    background-image: url(../img/header.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-.contents-frame::before {
-    background: inherit;
-    content: '';
-    filter: blur(5px);
-    position: absolute;
-    top: -5px;
-    right: -5px;
-    bottom: -5px;
-    left: -5px;
-}
 
 .separator-white {
     height:1px;
