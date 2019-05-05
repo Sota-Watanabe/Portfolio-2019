@@ -42,7 +42,7 @@ header *{
 }
 
 header h1{
-    margin: 30px 10px; 
+    margin: 50px 10px; 
     font-size: 40px
 }
 
@@ -57,16 +57,16 @@ article > section {
 }
 
 article > section > h1 {
+    width: 900px;
     font-size: 30px;
     padding: 10px;
-    margin: 20px 0;
+    margin: 10px auto 20px;
 }
 
 .img-profile {
-    width: 800px;
+    width: 900px;
     text-align: center;
-    /* ↓なぜ必要なのかわからん */
-    margin: auto;
+    margin: 0 auto;
 }
 
 .clearfix::after {
@@ -76,11 +76,9 @@ article > section > h1 {
 }
 
 .pull-left {
-    width: 60%;
+    width: 70%;
     height: 180px;
     float: left;
-
-    /* box-sizing: border-box; */
 }
 
 img.icon-large {
@@ -90,10 +88,15 @@ img.icon-large {
 }
 
 .profile-text {
-    width: 60%;
-    font-size: 20px;
+    width: 62%;
+    font-size: 25px;
     line-height: 180%;
-    margin-bottom: 32px;
     text-align: left;
-    padding: 20px 0 10px;
+    padding: 10px 0 10px;
+}
+
+section > section {
+    padding: 10px;
+    margin: 10px;
+    font-size: 25px;
 }
