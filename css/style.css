@@ -15,7 +15,6 @@ header{
     z-index: 0;
     overflow: hidden;/*ブラー効果でボヤけた部分を非表示*/
     padding: 50px 0 60px;
-    margin: 0 0 60px;
 }
 
 header:before{
@@ -53,19 +52,21 @@ article {
 }
 
 article > section {
-    padding: 20px;
-    margin: 30px;
+    padding: 10px;
+    margin: 30px 10px;
 }
 
 article > section > h1 {
     font-size: 30px;
+    padding: 10px;
+    margin: 20px 0;
 }
 
 .img-profile {
-    width: 500px;
+    width: 800px;
     text-align: center;
     /* ↓なぜ必要なのかわからん */
-    margin: auto; 
+    margin: auto;
 }
 
 .clearfix::after {
@@ -75,21 +76,24 @@ article > section > h1 {
 }
 
 .pull-left {
-    width: 280px;
+    width: 60%;
     height: 180px;
     float: left;
+
     /* box-sizing: border-box; */
 }
-
-.pull-right {
-    width: 200px;
-    height: 180px;
-    float: right;
-}
-
 
 img.icon-large {
     width: 230px;
     border-radius: 20%;
+    margin: 0 40px 0 0;
 }
 
+.profile-text {
+    width: 60%;
+    font-size: 20px;
+    line-height: 180%;
+    margin-bottom: 32px;
+    text-align: left;
+    padding: 20px 0 10px;
+}
