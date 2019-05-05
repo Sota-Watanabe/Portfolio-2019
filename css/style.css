@@ -102,9 +102,12 @@ img.icon-large {
     font-size: 25px;
 }
 
-.works {
+.works > section {
+    padding: 10px;
+    margin: 10px;
     font-size: 25px;
 }
 .works p {
     font-size: 20px;
+    height: 60px;
 }
