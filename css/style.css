@@ -6,6 +6,7 @@
 body {
     background-color:rgb(253, 246, 246);
     color:#444;
+    -webkit-text-size-adjust: 100%;
 }
 
 header{
@@ -95,7 +96,7 @@ img.icon-large {
     padding: 10px 0 10px;
 }
 
-section > section {
+.used > section {
     padding: 10px;
     margin: 10px;
     font-size: 25px;
