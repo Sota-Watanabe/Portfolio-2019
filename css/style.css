@@ -101,3 +101,10 @@ img.icon-large {
     margin: 10px;
     font-size: 25px;
 }
+
+.works {
+    font-size: 25px;
+}
+.works p {
+    font-size: 20px;
+}
