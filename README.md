@@ -1,3 +1,3 @@
 # Portfolio
-只今製作中  
+制作停止 
 [途中経過](https://sota-watanabe.github.io/Portfolio/)
